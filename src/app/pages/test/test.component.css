@@ -1,0 +1,80 @@
+/* Style pour le conteneur principal */
+
+
+/* Style des titres de test */
+.test-title {
+  color: #0056b3;
+  font-size: 1.5rem; /* Taille augmentée pour correspondre à la balise h2 */
+}
+
+/* Style des descriptions de test */
+.test-description {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 1rem; /* Espacement ajouté après la description */
+}
+
+/* Style pour chaque bloc de question */
+
+
+/* Style pour le texte de la question */
+.question-text {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem; /* Espacement ajouté après le texte de la question */
+}
+
+/* Style pour les blocs d'options */
+.option-block {
+  margin: 0.5rem 0;
+}
+
+/* Style pour les inputs d'options */
+.option-input {
+  margin-right: 0.5rem;
+}
+
+/* Style pour les labels d'options */
+.option-label {
+  font-weight: normal;
+  color: #333;
+}
+
+/* Styles pour les boutons de soumission, pas de changement requis */
+.submit-button {
+  background-color: #0056b3;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.submit-button:hover {
+  background-color: #003d82;
+}
+.form-container {
+  width: 60%; /* Taille standard pour le conteneur */
+  margin: 2rem auto; /* Espace au-dessus et en dessous, et centrage horizontal */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem; /* Padding ajouté ici */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box; /* Assure que le padding est inclus dans la largeur */
+}
+
+/* Style pour chaque bloc de question */
+.question-block {
+  margin-top: 1rem;
+  padding: 1rem; /* Padding intérieur */
+  background-color: #f9f9f9;
+  border-left: 6px solid #0056b3;
+  border-radius: 10px;
+  width: calc(100% - 2rem); /* calcule la largeur en soustrayant le double du padding */
+  box-sizing: border-box; /* Assure que le padding est inclus dans la largeur */
+}

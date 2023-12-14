@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+/*@import "~bootstrap/dist/css/bootstrap.min.css";*/
+
+.custom-card {
+  width: 350px;
+  max-width: 100%;
+  background-color: #eee!important;
+}
+
+.user-icon {
+  font-size: 100px;
+  color: darkred;
+}
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root{
+  background-color: #F6F6EF;
+  font-family: Raleway, sans-serif;
+
+}
+@layer base {
+  :root {
+    /* For rgb(255 115 179 / <alpha-value>) */
+    --color-primary: #E73245;
+
+    /* For hsl(198deg 93% 60% / <alpha-value>) */
+    --color-secondary: #F6F6EF;
+
+    --color-third: #f5b707;
+
+  }
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+

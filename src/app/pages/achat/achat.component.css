@@ -1,0 +1,339 @@
+.navbar {
+    background-color: #f8f8f8;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    width: 1200px;
+    
+}
+.navbar-container {
+  margin: 0; /* Retire les marges */
+  padding: 0; /* Retire les paddings */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between; /* Space between left and right items */
+    align-items: center;
+    width: 100%; /* Ensure the container fills the nav */
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-image {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.username {
+    font-size: 16px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-left, .navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.logout-button {
+    margin-left: 10px; /* Espacement entre l'icône de messagerie et le bouton de déconnexion */
+}
+
+/* Ajoutez d'autres styles au besoin pour ajuster l'apparence selon vos préférences */
+/* Style pour les icônes de messagerie et de déconnexion */
+.navbar-right i, .navbar-right button {
+    color: cyan; /* Couleur bleu cyan */
+    font-size: 20px; /* Taille plus grande des icônes */
+    margin-right: 10px; /* Espacement entre les icônes et les autres éléments */
+}
+
+/* Spécifique au bouton de déconnexion pour avoir le texte et l'icône de la même couleur */
+.logout-button {
+    background-color: transparent; /* Fond transparent */
+    border: none; /* Pas de bordure */
+    color: inherit; /* Hérite la couleur de l'élément parent */
+    padding: 0; /* Pas de padding supplémentaire */
+}
+
+.logout-button:hover {
+    color: cyan; /* Couleur au survol */
+}
+.view-cart-button {
+    background-color: #f0f0f0; /* Couleur de fond */
+    border: 1px solid #ddd; /* Bordure */
+    padding: 10px 15px; /* Espacement interne */
+    color: #333; /* Couleur du texte */
+    font-size: 16px; /* Taille de la police */
+}
+
+.view-cart-button i {
+    margin-right: 5px; /* Espacement entre l'icône et le texte */
+}
+.navbar-right i, .navbar-right .icon-button {
+    color: cyan; /* Couleur bleu cyan pour toutes les icônes */
+    font-size: 20px; /* Taille plus grande des icônes */
+    margin-right: 10px; /* Espacement entre les icônes */
+}
+
+.icon-button {
+    background: none; /* Pas de fond pour que le bouton ressemble à une icône */
+    border: none; /* Pas de bordure */
+    padding: 0; /* Réduire l'espacement autour de l'icône */
+}
+
+.icon-button:hover {
+    color: darker-cyan; /* Changement de couleur au survol, si souhaité */
+}
+.navbar-right i, .navbar-right .icon-button {
+    color: cyan; /* Couleur bleu cyan pour toutes les icônes */
+    font-size: 20px; /* Taille plus grande des icônes */
+    margin-right: 15px; /* Espacement uniforme entre les icônes */
+}
+
+.navbar-right i:last-child, .navbar-right .icon-button:last-child {
+    margin-right: 0; /* Pas d'espacement à droite pour le dernier élément */
+}
+
+.icon-button {
+    background: none; /* Pas de fond pour que le bouton ressemble à une icône */
+    border: none; /* Pas de bordure */
+    padding: 0; /* Réduire l'espacement autour de l'icône */
+    cursor: pointer; /* Style du curseur pour indiquer que c'est un bouton */
+}
+.cart-table table {
+    width: 100%; /* Fait en sorte que le tableau occupe toute la largeur du conteneur */
+  }
+  
+  .cart-table th, .cart-table td {
+    padding: 10px; /* Ajustez le padding selon vos besoins */
+  }
+  
+  .cart-pic {
+    width: 33.3333%; /* Un tiers de la largeur pour l'image */
+  }
+  
+  .cart-title {
+    width: 33.3333%; /* Un tiers de la largeur pour le titre */
+  }
+  
+  .p-price {
+    width: 33.3333%; /* Un tiers de la largeur pour le statut */
+  }
+  
+  .close-td {
+    /* Si vous voulez que le bouton de fermeture soit sur la même ligne,
+       définissez une largeur ou supprimez cette colonne si non nécessaire */
+  }
+  
+  /* Assurez-vous que l'image est responsive et ne dépasse pas la colonne */
+  .cart-pic img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Cela fera en sorte que l'image soit centrée si elle est plus petite que la largeur disponible */
+  }
+  
+/* Ajoutez des styles supplémentaires au besoin */
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.cart-table table {
+    width: 100%;
+}
+
+.cart-table th, .cart-table td {
+    text-align: center; /* Center align table cells content */
+    vertical-align: middle; /* Align cell content vertically */
+}
+
+.cart-pic {
+    width: 33%; /* Assign width to image column */
+}
+
+.cart-title {
+    width: 34%; /* Assign width to title column */
+}
+
+.p-price {
+    width: 33%; /* Assign width to price column */
+}
+
+/* Responsive image size */
+.course-image {
+    max-width: 85%; /* Image takes the maximum width of the cell */
+    height: auto; /* Maintain aspect ratio */
+}
+.cart-table-wrap {
+    margin: 0 auto; /* Centers the table */
+    max-width: 80%; /* Adjusts the maximum width of the inner content */
+}
+
+.cart-table {
+    width: 100%; /* Ensures the table takes up the full width of its container */
+}
+
+/* Ensure that your CSS is linked properly in your Angular component or global styles */
+/* achat.component.css */
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif; /* Use a font of your choice */
+    margin: 0;
+    padding-top: 60px; /* Add space at the top of the body to avoid overlap with the navbar */
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    background-color: #f8f9fa; /* Light gray background, adjust color to your preference */
+    border-bottom: 1px solid #e7e7e7; /* Add a border to the bottom of the navbar */
+    padding: 10px 0; /* Padding to give space inside the navbar */
+    position: fixed; /* Fix the navbar at the top */
+    width: 100%; /* Ensure navbar spans full width */
+    top: 0; /* Align navbar to the top */
+    z-index: 1000; /* Ensure navbar stays above other content */
+  }
+  
+  /* Shopping cart section styling */
+  .shopping-cart {
+    padding: 20px 0; /* Add some padding above and below the shopping cart for spacing */
+    background-color: #fff; /* White background, or change to match your design */
+    border: 1px solid #e7e7e7; /* Add a border around the shopping cart section */
+    border-radius: 4px; /* Optional: rounded corners for the shopping cart */
+    margin-top: 20px; /* Add space between the navbar and the shopping cart section */
+  }
+  
+  /* Container styling */
+  .container {
+    max-width: 1200px; /* Set a max-width for the container if you want to limit the content width */
+    margin: 0 auto; /* Center the container within the page */
+  }
+  
+  /* Cart table styling */
+  .cart-table {
+    width: 100%;
+    border-collapse: collapse; /* Collapse borders */
+  }
+  
+  .cart-table th,
+  .cart-table td {
+    border: 1px solid #ddd; /* Add border to table header and cells */
+    padding: 8px; /* Add padding within table cells */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .cart-table th {
+    background-color: #f4f4f4; /* Light background for the table header */
+  }
+  
+  /* Image styling in the cart table */
+  .cart-pic img {
+    width: 100px; /* Set the image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Optional: rounded corners for images */
+  }
+  
+  /* Spacing between rows for readability */
+  .cart-table tbody tr {
+    margin-bottom: 10px; /* Add space between table rows */
+  }
+  
+  /* Add a hover effect to rows */
+  .cart-table tbody tr:hover {
+    background-color: #f9f9f9; /* Change row background on hover */
+  }
+  /* Add these classes to your component's CSS or global styles */
+/* Add these classes to your component's CSS or global styles */
+.status-available {
+  color: green;
+}
+
+.status-enrolled {
+  color: blue;
+}
+.user-image {
+  width: 50px; /* vous avez déjà défini cela */
+  height: 50px; /* cela garantira que l'image reste carrée */
+  border-radius: 50%; /* cela donnera à l'image une forme circulaire, si désiré */
+  object-fit: cover; /* cela garantira que l'image couvre la zone sans être déformée */
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-end; /* Cela pousse .navbar-right à la fin du conteneur flex */
+}
+
+.navbar-right {
+  align-self: center; /* Cela aligne les éléments de .navbar-right verticalement au centre */
+}
+.navbar-collapse {
+  display: flex;
+  justify-content: space-between; /* Cela répartit les éléments uniformément */
+}
+
+.navbar-right {
+  align-self: center;
+}
+.navbar-icon {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.fas.fa-comment-dots {
+  font-size: 50px !important;
+}
+
+/* Assurez-vous que la barre de navigation est positionnée de manière relative */
+
+
+/* Positionnez .navbar-right à l'extrême droite de la barre de navigation */
+.navbar-right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%); /* Cela va centrer l'élément verticalement */
+}
+
+/* Vous pouvez également vouloir ajouter une marge à droite si nécessaire */
+.navbar-icon {
+  margin-right: 15px; /* Ajustez en fonction de votre design */
+}
+
+
+/* Define classes for other statuses if needed */
+.username {
+  display: block; /* Ou inline-block, selon la mise en page désirée */
+  color: #333; /* Une couleur qui contraste avec le fond */
+  font-size: 1rem; /* Ou la taille que vous souhaitez */
+  /* ... autres propriétés CSS pour le débuggage */
+}
+.btn {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}

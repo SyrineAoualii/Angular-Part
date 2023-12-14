@@ -1,0 +1,111 @@
+.navbar {
+    background-color: #f8f8f8;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between; /* Space between left and right items */
+    align-items: center;
+    width: 100%; /* Ensure the container fills the nav */
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.username {
+    font-size: 16px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-left, .navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.logout-button {
+    margin-left: 10px; /* Espacement entre l'icône de messagerie et le bouton de déconnexion */
+}
+
+/* Ajoutez d'autres styles au besoin pour ajuster l'apparence selon vos préférences */
+/* Style pour les icônes de messagerie et de déconnexion */
+.navbar-right i, .navbar-right button {
+    color: cyan; /* Couleur bleu cyan */
+    font-size: 20px; /* Taille plus grande des icônes */
+    margin-right: 10px; /* Espacement entre les icônes et les autres éléments */
+}
+
+/* Spécifique au bouton de déconnexion pour avoir le texte et l'icône de la même couleur */
+.logout-button {
+    background-color: transparent; /* Fond transparent */
+    border: none; /* Pas de bordure */
+    color: inherit; /* Hérite la couleur de l'élément parent */
+    padding: 0; /* Pas de padding supplémentaire */
+}
+
+.logout-button:hover {
+    color: cyan; /* Couleur au survol */
+}
+.view-cart-button {
+    background-color: #f0f0f0; /* Couleur de fond */
+    border: 1px solid #ddd; /* Bordure */
+    padding: 10px 15px; /* Espacement interne */
+    color: #333; /* Couleur du texte */
+    font-size: 16px; /* Taille de la police */
+}
+
+.view-cart-button i {
+    margin-right: 5px; /* Espacement entre l'icône et le texte */
+}
+.navbar-right i, .navbar-right .icon-button {
+    color: cyan; /* Couleur bleu cyan pour toutes les icônes */
+    font-size: 20px; /* Taille plus grande des icônes */
+    margin-right: 10px; /* Espacement entre les icônes */
+}
+
+.icon-button {
+    background: none; /* Pas de fond pour que le bouton ressemble à une icône */
+    border: none; /* Pas de bordure */
+    padding: 0; /* Réduire l'espacement autour de l'icône */
+}
+
+.icon-button:hover {
+    color: darker-cyan; /* Changement de couleur au survol, si souhaité */
+}
+.navbar-right i, .navbar-right .icon-button {
+    color: cyan; /* Couleur bleu cyan pour toutes les icônes */
+    font-size: 20px; /* Taille plus grande des icônes */
+    margin-right: 15px; /* Espacement uniforme entre les icônes */
+}
+
+.navbar-right i:last-child, .navbar-right .icon-button:last-child {
+    margin-right: 0; /* Pas d'espacement à droite pour le dernier élément */
+}
+
+.icon-button {
+    background: none; /* Pas de fond pour que le bouton ressemble à une icône */
+    border: none; /* Pas de bordure */
+    padding: 0; /* Réduire l'espacement autour de l'icône */
+    cursor: pointer; /* Style du curseur pour indiquer que c'est un bouton */
+}
+
+/* Ajoutez des styles supplémentaires au besoin */
